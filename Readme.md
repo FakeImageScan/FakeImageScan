@@ -44,15 +44,18 @@ Estimates how challenging the image should be for AI models.
 ---
 
 ## 🧠 Feature Vector
-For each image \( I \), FakeImageScan extracts:
+For each image `I`, FakeImageScan extracts a 4D feature vector:
 
-\[
-\mathbf{x}(I) = [A(I),\; S(I),\; N(I),\; C(I)]
-\]
+**x(I) = [ A(I), S(I), N(I), C(I) ]**
 
-The final classification is performed using an **SVM with RBF kernel**.
+Where:
+- **A(I)**: Inpainting Accuracy (SSIM-based)
+- **S(I)**: Segmentation Confidence
+- **N(I)**: Pixel Naturalness
+- **C(I)**: Image Complexity
 
----
+Final classification is performed using an **SVM (RBF kernel)**.
+
 
 
 ## 📁 Repository Structure
