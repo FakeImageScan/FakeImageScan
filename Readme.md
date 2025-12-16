@@ -42,7 +42,23 @@ Estimates how challenging the image should be for AI models.
   Combines edge density, texture variance, entropy, and frequency-domain cues.
 
 ---
+## 📂 Dataset Structure
+The dataset follows a **binary folder structure** with only two classes: **Real** and **AI-Generated** images.
 
+```text
+data/
+├── real/
+│   ├── img_0001.jpg
+│   ├── img_0002.png
+│   ├── img_0003.jpeg
+│   └── ...
+└── ai_generated/
+    ├── img_1001.png
+    ├── img_1002.jpg
+    ├── img_1003.webp
+    └── ...
+
+---
 ## 🧠 Feature Vector
 For each image `I`, FakeImageScan extracts a 4D feature vector:
 
