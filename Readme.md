@@ -47,15 +47,15 @@ The dataset follows a **binary folder structure** with only two classes: **Real*
 
 ```text
 data/
-├── real/
-│   ├── img_0001.jpg
-│   ├── img_0002.png
-│   ├── img_0003.jpeg
+├── Real/
+│   ├── image 1.png
+│   ├── image 2.png
+│   ├── image 3.png
 │   └── ...
-└── ai_generated/
-    ├── img_1001.png
-    ├── img_1002.jpg
-    ├── img_1003.webp
+└── AI_generated/
+    ├── image 1.png
+    ├── image 2.png
+    ├── image 3.png
     └── ...
 
 ---
